@@ -1,15 +1,15 @@
 {
-  "name": "y",
+  "name": "testing-stocks-query",
   "version": "1.0.0",
-  "description": "y",
-  "main": "y",
+  "description": "test",
+  "main": "index.js",
   "scripts": {
-    "test": "y"
+    "test": "nodemon index.js"
   },
   "keywords": [
     "y"
   ],
-  "author": "y",
+  "author": "Maxim Epifanov, Uladzislau Birukou",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",

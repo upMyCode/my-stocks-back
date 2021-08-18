@@ -1,11 +1,16 @@
 const app = require('express')();
 const { graphqlHTTP } = require('express-graphql');
+const cors = require('cors');
+const root = require('./routes/logic/root')
+const schema = require('./schemas/schema');
+
+app.use(cors());
 
 app.use('/graphql', graphqlHTTP({
-  schema: schema,
+  schema,
   graphiql: true,
-}))
-.use(cors());
+  rootValue: root
+}));
 
 app.listen(4000);
 
