@@ -28,7 +28,7 @@ const schema = buildSchema(`
   }
 
   type Query {
-    getAllStocks: [Stock]
+    stocks: [Stock]
     getStock(id: ID): Stock
   }
 
