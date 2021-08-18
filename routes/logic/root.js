@@ -1,6 +1,6 @@
 const stocks = require('../../stocksData/stocks')
 
-const VALUE = Math.random(1000)
+const VALUE = new Date()
 
 const addStock = (input) => {
     const id = VALUE
